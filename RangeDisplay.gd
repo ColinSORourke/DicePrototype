@@ -3,6 +3,8 @@ extends ColorRect
 
 var BGBar: Node
 
+# Comment Here to test Git
+
 @export
 var border: Color:
 	get:
@@ -78,7 +80,6 @@ func calcBGBar():
 	get_child(0).position.y = borderVal
 
 func calcFillBar():
-	print(float(lower-min)/(max-min+1) * get_child(0).size.x - get_child(0).get_child(0).position.x)
 	get_child(0).get_child(0).size.x = float(higher-lower+1)/(max-min+1) * get_child(0).size.x
 	get_child(0).get_child(0).position.x = float(lower-min)/(max-min+1) * get_child(0).size.x
 # Called when the node enters the scene tree for the first time.

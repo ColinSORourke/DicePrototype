@@ -25,31 +25,33 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 script = ExtResource("1_l8sr7")
-borderVal = 16
+background = Color(1, 1, 1, 1)
+fill = Color(0.466667, 0.466667, 0.466667, 1)
+borderVal = 6
 min = 10
 max = 15
 lower = 11
-higher = 15
+higher = 14
 
 [node name="TargetBarBG" type="ColorRect" parent="TargetBar"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 16.0
-offset_top = 16.0
-offset_right = -16.0
-offset_bottom = -16.0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = -6.0
+offset_bottom = -6.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.92549, 0.0431373, 0.262745, 1)
 
 [node name="TargetBarFill" type="ColorRect" parent="TargetBar/TargetBarBG"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 141.5
+offset_left = 144.833
+offset_right = -144.833
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.564706, 0.662745, 0.333333, 1)
+color = Color(0.466667, 0.466667, 0.466667, 1)
