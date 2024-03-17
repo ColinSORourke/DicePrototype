@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv5s5vig6i1ea"]
+
+[ext_resource type="Script" path="res://RangeDisplay.gd" id="1_l8sr7"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TargetBar" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 141.0
+offset_top = -144.0
+offset_right = -127.0
+offset_bottom = -75.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("1_l8sr7")
+borderVal = 16
+min = 10
+max = 15
+lower = 11
+higher = 15
+
+[node name="TargetBarBG" type="ColorRect" parent="TargetBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.92549, 0.0431373, 0.262745, 1)
+
+[node name="TargetBarFill" type="ColorRect" parent="TargetBar/TargetBarBG"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 141.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.564706, 0.662745, 0.333333, 1)
